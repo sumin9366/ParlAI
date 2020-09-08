@@ -22,7 +22,7 @@ once acting as Speaker 2.
 import os
 import json
 from parlai.core.teachers import FixedDialogTeacher
-import ParlAIDialogTeacher
+from parlai.core.teachers import ParlAIDialogTeacher
 from parlai.utils.io import PathManager
 from .build import build
 
