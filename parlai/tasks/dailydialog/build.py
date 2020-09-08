@@ -6,33 +6,34 @@
 #
 # Download and build the data if it does not exist.
 
-from parlai.core.build_data import DownloadableFile
+import parlai.core.build_data import DownloadableFile
 import parlai.core.build_data as build_data
 import os
 
-RESOURCES = [
-    DownloadableFile(
-        'http://parl.ai/downloads/dailydialog/dailydialog.tar.gz',
-        'dailydialog.tar.gz',
-        'c3adb09bd715b9fa5cd1ac41613b7de61eb5afbe477826a6146abefef573e6bb',
-    )
-]
-
 
 def build(opt):
-    dpath = os.path.join(opt['datapath'], 'dailydialog')
-    version = 'None'
+    # get path to data directory
+    dpath = os.path.join(opt['datapath'], 'example')
+    # define version if any
+    version = None
 
+    # check if data had been previously built
     if not build_data.built(dpath, version_string=version):
         print('[building data: ' + dpath + ']')
+
+        # make a clean directory if needed
         if build_data.built(dpath):
-            # An older version exists, so remove these outdated files.
+            # an older version exists, so remove these outdated files.
             build_data.remove_dir(dpath)
         build_data.make_dir(dpath)
 
-        # Download the data.
-        for downloadable_file in RESOURCES:
-            downloadable_file.download_file(dpath)
+        # download the data.
+        fname = 'example.tar.gz'
+        url = 'https://docs.google.com/uc?export=download&id=1M798qKi1PFJiO8KzqJ5N5rQu_kZ61t0Q' # dataset URL
+        build_data.download(url, dpath, fname)
 
-        # Mark the data as built.
+        # uncompress it
+        build_data.untar(dpath, fname)
+
+        # mark the data as built
         build_data.mark_done(dpath, version_string=version)
