@@ -25,7 +25,7 @@ from parlai.core.teachers import FixedDialogTeacher
 from parlai.utils.io import PathManager
 from .build import build
 
-
+"""
 START_ENTRY = {'text': '__SILENCE__', 'emotion': 'no_emotion', 'act': 'no_act'}
 
 
@@ -87,11 +87,11 @@ class Convai2Teacher(FixedDialogTeacher):
 
 
 class NoStartTeacher(Convai2Teacher):
-    """
+    ""
     Same as default teacher, but it doesn't contain __SILENCE__ entries.
 
     If we are the first speaker, then the first utterance is skipped.
-    """
+    ""
 
     def __init__(self, opt, shared=None):
         super().__init__(opt, shared)
@@ -128,3 +128,25 @@ class NoStartTeacher(Convai2Teacher):
 
 class DefaultTeacher(Convai2Teacher):
     pass
+"""
+class DefaultTeacher(ParlAIDialogTeacher):
+    def __init__(self, opt, shared=None):
+        opt = copy.deepcopy(opt)
+
+        # get datafile
+        opt['parlaidialogteacher_datafile'] = _path(opt, '')
+
+        super().__init__(opt, shared)
+    def num_episodes(self):
+        return self.num_eps
+
+    def num_examples(self):
+        return self.num_exs
+    
+    def _path(opt, filtered):
+    # build the data if it does not exist
+       build(opt)
+       print('11111111111111111')
+    # set up path to data (specific to each dataset)
+       dt = opt['datatype'].split(':')[0]
+      return os.path.join(opt['datapath'], 'example', dt + '.tar.gz')
