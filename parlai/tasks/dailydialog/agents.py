@@ -25,6 +25,7 @@ from parlai.core.teachers import FixedDialogTeacher
 from parlai.core.teachers import ParlAIDialogTeacher
 from parlai.utils.io import PathManager
 from .build import build
+import copy
 
 """
 START_ENTRY = {'text': '__SILENCE__', 'emotion': 'no_emotion', 'act': 'no_act'}
