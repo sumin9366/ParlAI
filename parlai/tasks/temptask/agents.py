@@ -30,6 +30,7 @@ def _path(opt):
     )
 class DefaultTeacher(ParlAIDialogTeacher):
     def __init__(self, opt, shared=None):
+        build(opt)
         opt = copy.deepcopy(opt)
         opt['datafile'] = _path(opt)
         # get datafile
