@@ -14,7 +14,7 @@ import copy
 
 def _path(opt):
     build(opt)
-   suffix = ''
+    suffix = ''
     dt = opt['datatype'].split(':')[0]
     if dt == 'train':
         suffix = 'train'
