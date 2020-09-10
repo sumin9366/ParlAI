@@ -12,9 +12,9 @@ import os
 
 RESOURCES = [
     DownloadableFile(
-        '1M798qKi1PFJiO8KzqJ5N5rQu_kZ61t0Q',
-        'example.tar.gz',
-        '9caef1747f7f94547f6f5c2af8025397d7e809c30be75133cc237b26125343de',
+        '1k4b5WJS8aH48Scn3RZlHqQg600QDh7jP',
+        'example.zip',
+        'ef86c1b24517544c0f0a9f4962a94d65a1dffe7556f5c74118e107ea001e0e58',
         from_google=True,
     )
 ]
