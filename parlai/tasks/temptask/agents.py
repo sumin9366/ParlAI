@@ -15,7 +15,6 @@ import copy
 def _path(opt, filtered):
     # build the data if it does not exist
     build(opt)
-    print('11111111111111111')
     # set up path to data (specific to each dataset)
     dt = opt['datatype'].split(':')[0]
     return os.path.join(opt['datapath'], 'example', dt + '.tar.gz')
