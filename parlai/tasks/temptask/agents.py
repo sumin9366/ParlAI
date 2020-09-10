@@ -34,16 +34,5 @@ class DefaultTeacher(ParlAIDialogTeacher):
         opt['datafile'] = _path(opt)
         # get datafile
         opt['parlaidialogteacher_datafile'] = _path(opt)
-        self.num_eps=num_eps
-        self.num_exs=num_exs
-
 
         super().__init__(opt, shared)
-        
-    def num_episodes(self):
-        return self.num_eps
-
-    def num_examples(self):
-        return self.num_exs
-    
-
