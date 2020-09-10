@@ -10,6 +10,14 @@ from parlai.core.build_data import DownloadableFile
 import parlai.core.build_data as build_data
 import os
 
+RESOURCES = [
+    DownloadableFile(
+        'https://docs.google.com/uc?export=download&id=1M798qKi1PFJiO8KzqJ5N5rQu_kZ61t0Q',
+        'example.tar.gz',
+        '9caef1747f7f94547f6f5c2af8025397d7e809c30be75133cc237b26125343de',
+        from_google=TRUE
+    )
+]
 
 def build(opt):
     # get path to data directory
@@ -28,12 +36,8 @@ def build(opt):
         build_data.make_dir(dpath)
 
         # download the data.
-        fname = 'example.tar.gz'
-        url = 'https://docs.google.com/uc?export=download&id=1M798qKi1PFJiO8KzqJ5N5rQu_kZ61t0Q' # dataset URL
-        build_data.download(url, dpath, fname)
-
-        # uncompress it
-        build_data.untar(dpath, fname)
+        for downloadable_file in RESOURCES:
+            downloadable_file.download_file(dpath)
 
         # mark the data as built
         build_data.mark_done(dpath, version_string=version)
