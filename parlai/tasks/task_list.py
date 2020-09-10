@@ -1263,10 +1263,10 @@ task_list = [
         ),
     },
     {
-        "id": "Daily2",
-        "display_name": "Daily 2",
-        "task": "daily2",
-        "tags": ["All", "ChitChat", "Dodeca"],
+        "id": "temp",
+        "display_name": "temp",
+        "task": "temp",
+        "tags": ["All", "ChitChat"],
         "description": ("Dialogue datasets"
         ),
     },
