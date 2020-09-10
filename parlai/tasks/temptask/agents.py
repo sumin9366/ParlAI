@@ -12,7 +12,7 @@ from parlai.utils.io import PathManager
 from .build import build
 import copy
 
-def _path(opt, filtered):
+def _path(opt):
     # build the data if it does not exist
     build(opt)
    suffix = ''
@@ -34,7 +34,7 @@ class DefaultTeacher(ParlAIDialogTeacher):
         opt = copy.deepcopy(opt)
         opt['datafile'] = _path(opt)
         # get datafile
-        opt['parlaidialogteacher_datafile'] = _path(opt, '')
+        opt['parlaidialogteacher_datafile'] = _path(opt)
 
         super().__init__(opt, shared)
         
