@@ -25,7 +25,6 @@ def _path(opt):
     return os.path.join(
         opt['datapath'],
         'example',
-        'example',
         '_{suffix}.txt'.format(suffix=suffix),
     )
 class DefaultTeacher(ParlAIDialogTeacher):
