@@ -1263,9 +1263,9 @@ task_list = [
         ),
     },
     {
-        "id": "temp",
-        "display_name": "temp",
-        "task": "temp",
+        "id": "tempTask",
+        "display_name": "temp_task",
+        "task": "temptask",
         "tags": ["All", "ChitChat"],
         "description": ("Dialogue datasets"
         ),
