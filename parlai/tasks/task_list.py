@@ -1262,4 +1262,12 @@ task_list = [
             "human and a virtual assistant."
         ),
     },
+    {
+        "id": "Daily2",
+        "display_name": "Daily 2",
+        "task": "daily2",
+        "tags": ["All", "ChitChat", "Dodeca"],
+        "description": ("Dialogue datasets"
+        ),
+    },
 ]
