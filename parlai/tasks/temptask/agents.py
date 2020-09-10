@@ -13,7 +13,6 @@ from .build import build
 import copy
 
 def _path(opt):
-    # build the data if it does not exist
     build(opt)
    suffix = ''
     dt = opt['datatype'].split(':')[0]
