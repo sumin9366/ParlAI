@@ -17,6 +17,12 @@ RESOURCES = [
         'ef86c1b24517544c0f0a9f4962a94d65a1dffe7556f5c74118e107ea001e0e58',
         from_google=True,
     )
+        DownloadableFile(
+        '1RHHdtXqm-FugBVy24SC7Cmq18EolrT6R',
+        'example2.zip',
+        '58796afd4f44dce9680a960d9f9ab3c0b3b111554439c868c3a1610b88af2023',
+        from_google=True,
+    )
 ]
 
 def build(opt):
