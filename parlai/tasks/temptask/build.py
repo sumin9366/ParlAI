@@ -18,9 +18,9 @@ RESOURCES = [
         from_google=True,
     ),
         DownloadableFile(
-        '1M2kPubhZI_JwiIbvg_ayv1dKESnDAmth',
+        '1mR5HD1IRidAIRhEgQrwq8o6q6R1x3vT5',
         'example2.zip',
-        '6edc2669b7ca28f1f8968e26a149309837f789a5f94c9658429df744cff7e5b5',
+        '398d0c4dc31af0122ba0218510d924adfc08e3883bed5d800f250da34514a86e',
         from_google=True,
     )
 ]
