@@ -14,6 +14,7 @@ RESOURCES = [
     DownloadableFile(
         '1k4b5WJS8aH48Scn3RZlHqQg600QDh7jP',
         'example.zip',
+        
         'ef86c1b24517544c0f0a9f4962a94d65a1dffe7556f5c74118e107ea001e0e58',
         from_google=True,
     ),
