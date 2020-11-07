@@ -21,7 +21,7 @@ def _path(opt):
     elif dt == 'test':
         suffix = 'test'
     elif dt == 'valid':
-        suffix = 'vaild'
+        suffix = 'valid'
     return os.path.join(
         opt['datapath'],
         'example',
