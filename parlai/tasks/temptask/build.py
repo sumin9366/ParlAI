@@ -12,16 +12,9 @@ import os
 
 RESOURCES = [
     DownloadableFile(
-        '1k4b5WJS8aH48Scn3RZlHqQg600QDh7jP',
-        'example.zip',
-        
-        'ef86c1b24517544c0f0a9f4962a94d65a1dffe7556f5c74118e107ea001e0e58',
-        from_google=True,
-    ),
-        DownloadableFile(
-        '1mR5HD1IRidAIRhEgQrwq8o6q6R1x3vT5',
-        'example2.zip',
-        '398d0c4dc31af0122ba0218510d924adfc08e3883bed5d800f250da34514a86e',
+        '1un69K0xVJMBZFUcFXd3A4SIN6S0XeWwb',
+        'example.zip',  
+        'b1ae68860782f21f2165f667fabc1372070abb2b2ad0a748a5c9ca454b4ea1b4',
         from_google=True,
     )
 ]
