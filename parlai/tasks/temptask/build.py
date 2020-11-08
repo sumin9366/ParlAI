@@ -15,7 +15,7 @@ RESOURCES = [
         '1un69K0xVJMBZFUcFXd3A4SIN6S0XeWwb',
         'example.zip',  
         'b1ae68860782f21f2165f667fabc1372070abb2b2ad0a748a5c9ca454b4ea1b4',
-        from_google=True,
+        from_google=True
     )
 ]
 
