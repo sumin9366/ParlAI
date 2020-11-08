@@ -12,10 +12,10 @@ import os
 
 RESOURCES = [
     DownloadableFile(
-        '1un69K0xVJMBZFUcFXd3A4SIN6S0XeWwb',
+        '1ePNIo-Bnu3QcaqteVibrUpJbOTFe2HhR',
         'example.zip',  
-        'b1ae68860782f21f2165f667fabc1372070abb2b2ad0a748a5c9ca454b4ea1b4',
-        from_google=True
+        '470134bfd65466642869e84e4f0037fd6663f718acd3ffacdb53faefeead18ca',
+        from_google=True,
     )
 ]
 
