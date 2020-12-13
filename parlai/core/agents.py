@@ -385,7 +385,7 @@ def create_agent(opt: Opt, requireModelExists=False):
         add_datapath_and_model_args(opt)
 
     if opt.get('model_file'):
-        opt['model_file'] = '/content/drive/My Drive/data/models/dodecadialogue/daily_dialog_ft/model' 
+        opt['model_file'] = '/content/drive/MyDrive/data/models/dodecadialogue/daily_dialog_ft/model' 
         #modelzoo_path(opt.get('datapath'), opt['model_file'])
         if requireModelExists and not PathManager.exists(opt['model_file']):
             raise RuntimeError(
