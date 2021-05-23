@@ -366,21 +366,7 @@ def add_datapath_and_model_args(opt: Opt):
 
 
 def create_agent(opt: Opt, requireModelExists=False):
-    """
-    Create an agent from the options ``model``, ``model_params`` and ``model_file``.
 
-    The input is either of the form
-    ``parlai.agents.ir_baseline.agents:IrBaselineAgent`` (i.e. the path
-    followed by the class name) or else just ``ir_baseline`` which
-    assumes the path above, and a class name suffixed with 'Agent'.
-
-    If ``model-file`` is available in the options this function can also
-    attempt to load the model from that location instead. This avoids having to
-    specify all the other options necessary to set up the model including its
-    name as they are all loaded from the options file if it exists (the file
-    opt['model_file'] + '.opt' must exist and contain a pickled or json dict
-    containing the model's options).
-    """
     if opt.get('datapath', None) is None:
         add_datapath_and_model_args(opt)
 
